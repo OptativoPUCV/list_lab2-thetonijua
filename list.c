@@ -73,7 +73,7 @@ void pushFront(List * list, const void * data) {
     list->head->prev=x;
     x->prev=NULL;
   }
-  if(list->tail!=NULL){
+  if(list->head!=NULL){
     list->head=x;
   }
   
