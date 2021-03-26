@@ -72,9 +72,9 @@ void pushFront(List * list, const void * data) {
     x->next=list->head;
     list->head->prev=x;
     x->prev=NULL;
-    list->head=x;
+    
   }
-
+  list->head=x;
   
   
   return (void)list->head->data;
