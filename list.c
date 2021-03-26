@@ -76,7 +76,7 @@ void pushFront(List * list, const void * data) {
   
 
   
-  return (void)list->head->data;
+  return (void)x->data;
 
 }
 
