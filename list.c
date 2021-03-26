@@ -52,7 +52,7 @@ void * nextList(List * list) {
 }
 
 void * lastList(List * list) {
-    if((list->current==NULL)||(list->tail==NULL)) return NULL;
+    if((list->current==NULL)&&(list->tail==NULL)) return NULL;
     list->current=list->tail;
     return (void*) list->current->data;
     return NULL;
