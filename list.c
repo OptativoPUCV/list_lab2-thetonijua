@@ -33,14 +33,14 @@ List * createList() {
     list->head=NULL;
     list->tail=NULL;
     return list;
-     return NULL;
+     
 }
 
 void * firstList(List * list) {
     if(! list->head) return NULL;
     list->current=list->head;
     return (void *) list->head->data;
-    return NULL;
+    
 }
 
 void * nextList(List * list) {
@@ -66,6 +66,7 @@ void * prevList(List * list) {
 }
 
 void pushFront(List * list, const void * data) {
+  
   Node* x = createNode(data);
 
  
