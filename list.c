@@ -71,12 +71,10 @@ void pushFront(List * list, const void * data) {
   Node* x= createNode(data);
   if(list->head){
     x->next=list->head;
-    
-    
   }
   x->prev=NULL;
   list->head=x;
-    
+  list->tail=list->current;
 }
 
 void pushBack(List * list, const void * data) {
