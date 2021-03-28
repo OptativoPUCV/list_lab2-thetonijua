@@ -121,6 +121,9 @@ void * popCurrent(List * list) {
     }
     if(list->current->next!=NULL){
       list->current->next->prev=list->current->prev;
+      if(list->current->prev==NULL){
+        list->head=list->current->next;
+      }
     }
     const void *aux=list->current->data;list->current=list->current->next;
     return (void*)aux;
