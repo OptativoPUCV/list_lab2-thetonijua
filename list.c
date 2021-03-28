@@ -90,9 +90,9 @@ void pushCurrent(List * list, const void * data) {
   Node* z = createNode(data);
 
   if(list->current==list->tail){
-    z->prev=list->current;
+    z->prev=list->tail;
     z->next=NULL;  
-    list->current->next=z;
+    list->tail->next=z;
   }
     if((list->current!=list->tail)&&(list->current!=NULL)){
     z->prev=list->current;
