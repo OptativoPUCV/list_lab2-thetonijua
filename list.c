@@ -75,12 +75,10 @@ void pushFront(List * list, const void * data) {
      list->head->prev=x;
       
     }
-    if((list->tail!=NULL)&&(list->head!=NULL)){
+    
      list->head=x;
-    }
-    if(list->head){
-      return (void)list->head->data;
-    }
+    
+    
 }
 
 void pushBack(List * list, const void * data) {
